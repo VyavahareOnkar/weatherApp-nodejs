@@ -17,7 +17,7 @@ const readFile=fs.readFileSync("./home.html","utf-8");
 
 
 const server=http.createServer((req,res)=>{
-    requests('https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=f0fc12e0d0bc503ccfea5d7ab9d791f9')
+    requests('Enter api link here')
     .on('data',(chunk)=> {
         const objData=JSON.parse(chunk);
         const arrayOfObj=[objData];
