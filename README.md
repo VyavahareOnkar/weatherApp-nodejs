@@ -1,4 +1,5 @@
 # weatherApp-nodejs
 
+Interactive and responsive Web Application:
 
-Weather Web Application made by NodeJs as Backend for creating server and fetching the weather conditions through the API.
+NodeJs is used as Backend for creating server and fetching the weather conditions through the API.
