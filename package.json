@@ -1,0 +1,27 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Learning How to fetch data from the api and display it on the client side using this project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VyavahareOnkar/weatherApp-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "weatherApp",
+    "backend"
+  ],
+  "author": "Onkar Vyavahare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VyavahareOnkar/weatherApp-nodejs/issues"
+  },
+  "homepage": "https://github.com/VyavahareOnkar/weatherApp-nodejs#readme",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
