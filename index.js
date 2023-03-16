@@ -21,7 +21,11 @@ const replaceWithData=(htmlfile,objInArray)=>{
 }
 
 const server=http.createServer((req,res)=>{
-    requests("https://api.openweathermap.org/data/2.5/weather?q=Pune,In&APPID=f0fc12e0d0bc503ccfea5d7ab9d791f9")
+
+    // YOu have to enter the api key in place of {apikey}:---->>>
+
+    requests("https://api.openweathermap.org/data/2.5/weather?q=Pune,In&APPID={apikey}")
+
     .on("data",(chunk)=> {
         const objData=JSON.parse(chunk);
         const arrayOfObj=[objData];
