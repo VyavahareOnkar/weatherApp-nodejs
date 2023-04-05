@@ -3,8 +3,10 @@ const fs = require("fs");
 const http = require("http");
 const requests = require("requests");
 
+// const dotenv=require("dotenv");
 
-
+// dotenv.config({path:"./.env"});
+require('dotenv').config()
 
 const readFile=fs.readFileSync("home.html","utf-8");
 
@@ -24,7 +26,7 @@ const server=http.createServer((req,res)=>{
 
     // YOu have to enter the api key in place of {apikey}:---->>>
 
-    requests("https://api.openweathermap.org/data/2.5/weather?q=Pune,In&APPID={apikey}")
+    requests(process.env.API_URL)
 
     .on("data",(chunk)=> {
         const objData=JSON.parse(chunk);
